@@ -1,4 +1,5 @@
 import csv
+import matplotlib.pyplot as p
 months=[]
 sales=[]
 expense=[]
@@ -13,7 +14,7 @@ with open(file,'r') as ff:
           expense.append(int(x[2]))
           profit.append(int(x[3]))
 print("total sales is",sum(sales))
-import matplotlib.pyplot as p
+##visualization
 p.plot(months,sales,marker="o")
 p.title("MONHTHS VS SALES GRAPH",color="brown")
 p.xlabel("months")
@@ -44,7 +45,7 @@ maxindex=sales.index(maxsale)
 print("months with highest sales is",months[maxindex])
 minprofit=min(profit)
 minprofitindex=profit.index(minprofit)
-print("months with lowest profit is,months[minprofitindex])
+print("months with lowest profit is",months[minprofitindex])
 print("AVERAGE SALES IS", sum(sales)/len(sales))
 print("TOTAL EXPENSE IS", sum(expense))
 mp=[]
@@ -60,4 +61,5 @@ print("MONTHS WITH PROFIT GREATER THAN 10000 are",mp)
      
 
      
+
 
