@@ -44,7 +44,7 @@ maxindex=sales.index(maxsale)
 print("months with highest sales is",months[maxindex])
 minprofit=min(profit)
 minprofitindex=profit.index(minprofit)
-print("months with lowest profit is",minprofit)
+print("months with lowest profit is,months[minprofitindex])
 print("AVERAGE SALES IS", sum(sales)/len(sales))
 print("TOTAL EXPENSE IS", sum(expense))
 mp=[]
@@ -60,3 +60,4 @@ print("MONTHS WITH PROFIT GREATER THAN 10000 are",mp)
      
 
      
+
