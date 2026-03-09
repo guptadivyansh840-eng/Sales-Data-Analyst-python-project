@@ -3,10 +3,10 @@ months=[]
 sales=[]
 expense=[]
 profit=[]
-file=r"C:\Users\LENOVO\OneDrive\Desktop\student.csv"
+file=r"salesanalysis.csv"
 with open(file,'r') as ff:
-     marksanalyse=csv.reader(ff)
-     lis=list(marksanalyse)
+     salesanalysis=csv.reader(ff)
+     lis=list(salesanalysis)
      for x in lis[1:]:
           months.append(x[0])
           sales.append((int(x[1])))
@@ -58,4 +58,5 @@ print("MONTHS WITH PROFIT GREATER THAN 10000 are",mp)
 
 
      
+
      
