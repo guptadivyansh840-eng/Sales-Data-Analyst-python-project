@@ -1,5 +1,5 @@
 # Sales Data Analysis using Python
-Monthly sales data analysis and visualization using Python CSV handling and Matplotlib.
+Data analysis project using Python and CSV handling to analyze student marks and identify performance trends.
 
 ## Features
 - Total sales calculation
